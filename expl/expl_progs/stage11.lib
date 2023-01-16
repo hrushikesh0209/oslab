@@ -1,0 +1,5 @@
+POP R9
+INT 7
+PUSH R9
+RET
+

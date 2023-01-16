@@ -1,0 +1,3 @@
+fdisk
+run ../commands.txt
+exit

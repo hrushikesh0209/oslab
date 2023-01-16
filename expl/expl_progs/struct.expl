@@ -1,0 +1,28 @@
+type
+Student 
+{
+str name;
+int marks;
+}
+endtype
+
+int main()
+{
+decl
+Student obj;
+int temp;
+enddecl
+
+begin
+temp=exposcall("Heapset");
+obj=exposcall("Alloc",2);
+obj.name="John";
+obj.marks=89;
+
+temp=exposcall("Write",-2,obj.name);
+temp=exposcall("Write",-2,obj.marks);
+
+temp=exposcall("Free",obj);
+return 0;
+end
+}
